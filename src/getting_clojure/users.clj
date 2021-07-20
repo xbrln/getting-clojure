@@ -46,14 +46,19 @@
    (interpose ","
     (map :email
      (take 3
-       (reverse
-         (sort-by :created_at comments)))))))
+      (reverse
+       (sort-by :created_at comments)))))))
 
 (def latest-users-2
   (->>
-    comments
-    (sort-by :created_at)
-    reverse
-    (take 3)))
+   comments
+   (sort-by :created_at)
+   reverse
+   (take 3)
+   (map :email)
+   (interpose ", ")
+   (apply str)))
 
 latest-users
+
+latest-users-2
