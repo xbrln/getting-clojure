@@ -38,11 +38,11 @@
 
 (def employee-profile
   "An example of an employees work profile"
-  {:work-percentage 35.0
+  {:work-percentage 49.0
    :weekdays 22
    :hours-per-day 8
    :holiday 0
-   :vacation 5
+   :vacation 3
    :sick-day 0})
 
 (ka-work-hours employee-profile)
