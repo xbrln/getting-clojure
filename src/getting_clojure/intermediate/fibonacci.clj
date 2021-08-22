@@ -20,7 +20,8 @@
   (
     (fn fib
       [a b]
-      (cons a (lazy-seq (fib b (+ a b))))
-     0 1)))
+      (cons a (lazy-seq (fib b (+ a b)))))
+    0 1))
+
 
 (take 20 lazy-seq-fibonacci)

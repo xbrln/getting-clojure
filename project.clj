@@ -5,7 +5,10 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [org.clojure/java.jdbc "0.4.2"]
-                 [mysql/mysql-connector-java "5.1.38"]]
+                 [mysql/mysql-connector-java "5.1.38"]
+                 [simple/email-address "1.0.1"]
+                 [clanhr/work-days "0.11.0"]
+                 [iso-country-codes "1.0"]]            
   :main ^:skip-aot getting-clojure.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all
