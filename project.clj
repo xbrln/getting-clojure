@@ -8,7 +8,10 @@
                  [mysql/mysql-connector-java "5.1.38"]
                  [simple/email-address "1.0.1"]
                  [clanhr/work-days "0.11.0"]
-                 [iso-country-codes "1.0"]]            
+                 [iso-country-codes "1.0"]
+                 [org.clojars.xbrln/tower-of-hanoi "0.1.0"]
+                 [org.clojars.xbrln/strom-cost "0.1.0"]
+                 [org.clojars.xbrln/days-on-earth "0.1.2"]]
   :main ^:skip-aot getting-clojure.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all

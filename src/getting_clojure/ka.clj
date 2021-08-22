@@ -42,7 +42,7 @@
    :weekdays 22
    :hours-per-day 8
    :holiday 0
-   :vacation 3
+   :vacation 5
    :sick-day 0})
 
 (ka-work-hours employee-profile)
