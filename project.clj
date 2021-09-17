@@ -12,8 +12,8 @@
                  [org.clojars.xbrln/tower-of-hanoi "0.1.0"]
                  [org.clojars.xbrln/strom-cost "0.1.0"]
                  [org.clojars.xbrln/days-on-earth "0.1.2"]
-                 [clj-gatling "0.16.0"]]
+                 [clj-gatling "0.16.0"]])
   :main ^:skip-aot getting-clojure.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all
-                       :jvm-opts ["-Dclojure.compiler.direct-linking=true"]}})
+                       :jvm-opts ["-Dclojure.compiler.direct-linking=true"]}}
