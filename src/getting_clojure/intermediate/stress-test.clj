@@ -6,9 +6,10 @@
   (let [{:keys [status]} @(http/get "https://comments.holidaypirates.group/")]
     (= status 200)))
 
-(clj-gatling/run
-  {:name "Simulation"
-   :scenarios [{:name "Localhost test scenario"
-                :steps [{:name "Root"
-                         :request localhost-request}]}]}
-  {:concurrency 200})
+(comment
+  (clj-gatling/run
+   {:name "Simulation"
+    :scenarios [{:name "Localhost test scenario"
+                 :steps [{:name "Root"
+                          :request localhost-request}]}]}
+   {:concurrency 200}))
