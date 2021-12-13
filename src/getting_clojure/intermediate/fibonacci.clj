@@ -13,7 +13,7 @@
     :else (+ (recursive-fibonacci (- n 1))
              (recursive-fibonacci (- n 2)))))
 
-(map recursive-fibonacci (range 20))
+(map recursive-fibonacci (range 200))
 
 (def lazy-seq-fibonacci
   "Fibonacci series using lazy sequence"

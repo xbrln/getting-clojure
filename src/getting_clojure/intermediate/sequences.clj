@@ -1,6 +1,7 @@
 (ns getting-clojure.intermediate.sequences
   "Learning sequences and lazy sequences"
-  (:require [clojure.java.io :as io]
+  (:require [clojure.data.csv :as csv]
+            [clojure.java.io :as io]
             [clojure.string :as str]))
 
 (defn my-count [collection]
@@ -48,7 +49,7 @@
 
 (reverse (sort-by :rating films))
 
-(def f (line-seq (io/reader "LICENSE")))
+(def f (line-seq (io/reader "README.md")))
 
 (pr-str ["books" "blacls"])
 
@@ -166,11 +167,3 @@
 (doall a)
 
 (def foo (doall (map println [1 2 3])))
-
-
-
-(def list-1 '(["abc" "123" ""]
-              ["ytr" "4" ""]))
-
-(def list-2 '(["" "" "" "abc"]
-              ["" "" "" "def"]))
