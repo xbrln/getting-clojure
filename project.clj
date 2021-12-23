@@ -14,6 +14,7 @@
                 [org.clojure/data.csv "1.0.0"]
                 [org.clojure/data.json "2.4.0"]
                 [org.clojure/java.jdbc "0.4.2"]
+                [org.clojure/spec.alpha "0.3.214"]
                 [org.clojure/test.check "1.1.1"]
                 [simple/email-address "1.0.1"]]
 

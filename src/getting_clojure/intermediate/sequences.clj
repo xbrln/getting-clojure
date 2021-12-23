@@ -2,7 +2,10 @@
   "Learning sequences and lazy sequences"
   (:require [clojure.data.csv :as csv]
             [clojure.java.io :as io]
-            [clojure.string :as str]))
+            [clojure.string :as str]
+            [clojure.spec.alpha :as spec]))
+
+(spec/valid? :getting-clojure.intermediate.spec/post-s? {:tags "city" :destinations "berlin" :type "hotel"})
 
 (defn my-count [collection]
   (loop [count 0 collection collection]
@@ -120,7 +123,7 @@
 
 (def titles
   (map #(str "Cool book " %)
-    (iterate inc 1)))
+       (iterate inc 1)))
 
 (def first-name ["Thomman" "Chandi" "Kora" "Piley"])
 (def last-name ["Morathil" "Kulathil" "Valappil" "Thenginmukalil"])
@@ -130,8 +133,8 @@
 
 (def authors
   (map combine-names
-    (cycle first-name)
-    (cycle last-name)))
+       (cycle first-name)
+       (cycle last-name)))
 
 (defn make-book [title author]
   {:author author :title title})
@@ -141,9 +144,9 @@
 (rest test-books)
 
 (take 5
-  (map #(str %1 " - " %2)
-    (cycle first-name)
-    (cycle last-name)))
+      (map #(str %1 " - " %2)
+           (cycle first-name)
+           (cycle last-name)))
 
 (seq [12 3])
 
