@@ -1,0 +1,3 @@
+{:handler/time {:prefix "It's "
+                :suffix ", CODING TIME!"}
+ :ring/jetty   {:handler #ig/ref :handler/time}}
